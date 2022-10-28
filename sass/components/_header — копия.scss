@@ -3,22 +3,22 @@
 }
 
 .nav {
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
 
     &__logo {
-        // margin-right: 93px;
+        margin-right: 93px;
         color: $primary-accent-color;
         font-family: raleway,
             sans-serif;
         font-weight: 700;
-        // font-size: 26px;
-        // line-height: 1.19;
-        // letter-spacing: 0.03em;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
         color: $primary-accent-color;
 
         &--black {
-            // margin: 0px;
+            margin: 0px;
             color: #000000;
         }
     }
@@ -26,23 +26,23 @@
 
 
     &__list {
-        // display: flex;
+        display: flex;
 
         &:last-child {
-            // margin-left: auto;
+            margin-left: auto;
         }
     }
 
 
 
     &__link {
-        // position: relative;
-        // display: flex;
-        // align-items: center;
-        // margin-right: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
 
         &:last-child {
-            // margin-right: 0px;
+            margin-right: 0px;
         }
     }
 
@@ -62,14 +62,14 @@
 
             &::after {
                 content: '';
-                // position: absolute;
-                // display: inline-block;
-                // height: 4px;
-                // width: 100%;
-                // bottom: 0;
-                // left: 50%;
-                // transform: translate(-50%, 0%);
-                // border-radius: 2px;
+                position: absolute;
+                display: inline-block;
+                height: 4px;
+                width: 100%;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                border-radius: 2px;
                 background-color: $primary-accent-color;
             }
         }
@@ -77,8 +77,8 @@
 
     &__email {
         @extend %nav;
-        // display: flex;
-        // align-items: center;
+        display: flex;
+        align-items: center;
         color: $primary-text-color;
         fill: currentColor;
 
@@ -90,8 +90,8 @@
 
     &__tel {
         @extend %nav;
-        // display: flex;
-        // align-items: center;
+        display: flex;
+        align-items: center;
         color: $primary-text-color;
         fill: currentColor;
 
@@ -104,6 +104,6 @@
 
 
     &__icon {
-        // margin-right: 10px;
+        margin-right: 10px;
     }
 }

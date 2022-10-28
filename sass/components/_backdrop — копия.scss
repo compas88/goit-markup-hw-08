@@ -1,10 +1,10 @@
 .backdrop {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // bottom: 0;
-    // right: 0;
-    // z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -17,20 +17,20 @@
 }
 
 .modal {
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
 
-    // position: absolute;
-    // left: 50%;
-    // top: 50%;
-    // transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
 
-    // width: 528px;
-    // height: 581px;
-    // padding: 40px;
+    width: 528px;
+    height: 581px;
+    padding: 40px;
 
-    // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    // border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 
     background-color: $primary-white-color;
     opacity: 1;
@@ -42,26 +42,26 @@
     }
 
     &__close {
-        // position: absolute;
-        // top: 0;
-        // right: 0;
-        // display: flex;
-        // height: 46px;
-        // width: 46px;
-        // justify-content: center;
-        // align-items: center;
-        // padding: 8px;
-        // margin-left: auto;
-        // background: none;
-        // border: none;
-        // cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        height: 46px;
+        width: 46px;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        margin-left: auto;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 
     &__close-icon {
-        // height: 30px;
-        // width: 30px;
-        // fill: #000000;
-        // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        height: 30px;
+        width: 30px;
+        fill: #000000;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
@@ -70,46 +70,46 @@
     }
 
     &__subscribe {
-        // width: 100%;
-        // margin-left: auto;
-        // margin-right: auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__title {
-        // text-align: center;
-        // font-weight: 700;
-        // font-size: 20px;
-        // line-height: 1.15;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
         color: $primary-title-color;
         letter-spacing: 0.03em;
     }
 
     &__field {
-        // display: flex;
-        // flex-direction: column-reverse;
-        // margin-top: 10px;
-        // position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        position: relative;
 
         &:first-child {
-            // margin-top: 12px;
+            margin-top: 12px;
         }
     }
 
 
 
     &__label {
-        // font-size: 12px;
-        // line-height: 1.17;
-        // letter-spacing: 0.01em;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
         color: $primary-text-color;
     }
 
     &__input {
-        // margin-top: 4px;
-        // padding: 12px 0px 12px 42px;
-        // font-size: 14px;
-        // line-height: 1.17;
-        // letter-spacing: 0.01em;
+        margin-top: 4px;
+        padding: 12px 0px 12px 42px;
+        font-size: 14px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
         color: $primary-title-color;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -121,9 +121,9 @@
         }
 
         &.textarea {
-            // resize: none;
-            // height: 120px;
-            // padding: 12px 16px;
+            resize: none;
+            height: 120px;
+            padding: 12px 16px;
         }
     }
 
