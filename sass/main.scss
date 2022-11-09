@@ -1,8 +1,8 @@
-@import './base/base';
-@import './base/reset';
+@import './bases/base';
+@import './bases/reset';
 
-@import './themes/variables';
-@import './themes/mixins';
+@import './theme/variables';
+@import './theme/mixins';
 
 @import './components/logo';
 
