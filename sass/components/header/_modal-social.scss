@@ -1,0 +1,25 @@
+.modal-soc-list {
+    display: none;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+    }
+}
+
+.modal-soc-list__item {
+    &:not(:first-child) {
+        padding-left: 10px;
+
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &:not(:last-child) {
+        padding-right: 10px;
+    }
+}
+
+.modal-soc-list__link {
+    display: inline-flex;
+
+    @include Font(500, 18px, 1.22, 0.02em, getColor('blue_text_color'));
+}

@@ -1,0 +1,36 @@
+.works-title--hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.filter-btn {
+    padding: 6px 22px;
+
+    @include Font(500, 16px, 1.6, 0.03em, getColor('black_text_color'));
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    background-color: getColor('grey_btn_bgc');
+
+    &:hover,
+    &:focus {
+        color: getColor('white_text_color');
+        background-color: getColor('active_color');
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    transition: color $duration $timingF,
+    background-color $duration $timingF,
+    box-shadow $duration $timingF;
+}

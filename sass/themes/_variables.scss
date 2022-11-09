@@ -1,0 +1,33 @@
+$duration: 250ms;
+$timingF: cubic-bezier(0.4, 0, 0.2, 1);
+
+$colors: (
+    'black_text_color': #212121,
+    'grey_text_color': #757575,
+    'blue_text_color': #2196f3,
+    'white_text_color': #ffffff,
+
+    'white_bgc': #ffffff,
+    'grey_bgc': #f5f4fa,
+    'dark_bgc': #2f303a,
+    'blue_bgc': #2196f3,
+
+    'blue_logo_color': #2196f3,
+    'black_logo_color': #212121,
+    'white_logo_color': #ffffff,
+
+    'blue_btn_bgc': #2196f3,
+    'grey_btn_bgc': #f5f4fa,
+
+    'grey_icon_color': #757575,
+    'team-grey_icon_color': #afb1b8,
+    'white_icon_color': #ffffff,
+    'black_icon_color': #000000,
+
+    'active_color': #2196f3,
+    'active_btn_bgc': #188ce8,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

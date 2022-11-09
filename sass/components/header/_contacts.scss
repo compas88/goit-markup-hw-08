@@ -1,0 +1,134 @@
+.contact-list {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+
+        margin-bottom: 64px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: column;
+
+        margin-left: 96px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 315px;
+    }
+}
+
+.contact-list__item {
+    &:not(:first-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &:not(:last-child) {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &:not(:first-child) {
+        @media screen and (min-width: 1200px) {
+            margin-left: 30px;
+        }
+    }
+}
+
+.contact-list__link {
+    @media screen and (max-width: 767px) {
+        @include Font(500, 24px, 1.17, 0.02em, getColor('grey_text_color'));
+
+        &--increased {
+            @include Font(500, 34px, 1.17, 0.02em, getColor('grey_text_color'));
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        align-items: center;
+
+        @include Font(500, 12px, 1.17, 0.02em, getColor('grey_text_color'));
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: inline-flex;
+        align-items: center;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        @include Font(500, 14px, 1.14, 0.02em, getColor('grey_text_color'));
+    }
+
+    transition: color $duration $timingF;
+
+    &:hover,
+    &:focus {
+        color: getColor('active_color');
+    }
+
+    &:hover .contact-list__icon,
+    &:focus .contact-list__icon {
+        fill: getColor('active_color');
+    }
+}
+
+.contact-list__icon {
+
+    &-mail,
+    &-phone {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &-mail {
+        @media screen and (min-width: 768px) {
+            display: inline-flex;
+
+            margin-right: 8px;
+
+            width: 14px;
+            height: 10px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: inline-flex;
+
+            margin-right: 10px;
+
+            width: 16px;
+            height: 12px;
+        }
+
+        fill: getColor('grey_icon_color');
+    }
+
+    &-phone {
+        @media screen and (min-width: 768px) {
+            display: inline-flex;
+
+            margin-right: 8px;
+
+            width: 10px;
+            height: 14px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: inline-flex;
+
+            margin-right: 10px;
+
+            width: 10px;
+            height: 16px;
+        }
+
+        fill: getColor('grey_icon_color');
+    }
+
+    transition: fill $duration $timingF;
+}

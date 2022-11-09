@@ -1,0 +1,25 @@
+.adrs {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+}
+
+.adrs__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.adrs__link {
+    @include Font(400, 14px, 1.7, 0.03em, getColor('white_text_color'));
+    font-style: normal;
+
+    transition: color $duration $timingF;
+
+    &--grey {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:hover,
+    &:focus {
+        color: getColor('active_color');
+    }
+}

@@ -1,0 +1,27 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+
+        border-radius: 50%;
+
+        transition: background-color $duration $timingF;
+    }
+
+    &__icon {
+        fill: getColor('team-grey_icon_color');
+
+        transition: fill $duration $timingF;
+    }
+}
+
+.social-list__link:hover .social-list__icon--active,
+.social-list__link:focus .social-list__icon--active {
+    fill: getColor('white_icon_color');
+}

@@ -1,0 +1,95 @@
+.mobile-menu {
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(100%);
+
+        width: 100%;
+        height: 100%;
+        padding: 48px 40px;
+
+        overflow-y: scroll;
+        pointer-events: none;
+        visibility: hidden;
+
+        z-index: 1;
+
+        background-color: getColor('white_bgc');
+
+        transition: transform $duration $timingF, visibility $duration $timingF;
+
+        &.is-open {
+            transform: translateX(0);
+            pointer-events: initial;
+            visibility: visible;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.mobile-menu__btn {
+    @media screen and (max-width: 767px) {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+
+        margin-left: auto;
+
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        &-close {
+            position: absolute;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            top: 10px;
+            right: 15px;
+
+            width: 40px;
+            height: 40px;
+
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+
+            &:hover .mobile-menu__icon-close,
+            &:focus .mobile-menu__icon-close {
+                fill: getColor('active_color');
+            }
+        }
+
+        &:hover .mobile-menu__icon,
+        &:focus .mobile-menu__icon {
+            fill: getColor('active_color');
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+
+        &-close {
+            display: none;
+        }
+    }
+}
+
+.mobile-menu__icon,
+.mobile-menu__icon-close {
+    fill: #000000;
+
+    transition: fill $duration $timingF;
+}

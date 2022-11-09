@@ -1,0 +1,23 @@
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    color: getColor('blue_logo_color');
+
+    &--black {
+        color: getColor('black_logo_color');
+    }
+
+    &--white {
+        color: getColor('white_logo_color');
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}

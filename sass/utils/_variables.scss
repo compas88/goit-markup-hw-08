@@ -1,7 +1,59 @@
-$primary-bg-color: #F5F5F5;
-$secondary-bg-color: #F5F4FA;
-$footer-bg-color: #2F303A;
-$primary-title-color: #212121;
-$primary-text-color: #757575;
-$primary-white-color: #ffffff;
-$primary-accent-color: #2196F3;
+$colors: (
+    'primary': #212121,
+    'secondary': #757575,
+    'other': #ffffff,
+    'logo': #2196f3,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+$backgrounds: (
+    'primary': #ffffff,
+    'secondary': #f5f4fa,
+    'footer': #2f303a,
+    'third': rgba(47, 48, 58, 0.8),
+    'hero-banner': rgba(47, 48, 58, 0.4),
+    'hero-default': #c4c4c4,
+);
+
+@function getBgc($key) {
+    @return map-get($backgrounds, $key);
+}
+
+$bgc-btns: (
+    'primary': #2196f3,
+    'wk-primary': #f5f4fa,
+);
+
+@function getBgcbtn($key) {
+    @return map-get($bgc-btns, $key);
+}
+
+$fills: (
+    'primary': #afb1b8,
+    'white': #ffffff,
+);
+
+@function getFill($key) {
+    @return map-get($fills, $key);
+}
+
+$border-colors: (
+    'primary': #afb1b8,
+);
+
+@function getBc($key) {
+    @return map-get($border-colors, $key);
+}
+
+$active-colors: (
+    'blue': #2196f3,
+    'white': #ffffff,
+    'btn': #188ce8,
+);
+
+@function getActive($key) {
+    @return map-get($active-colors, $key);
+}
